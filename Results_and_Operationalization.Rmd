@@ -2,9 +2,9 @@
 title: "Results and Operationalization"
 subtitle: Aaron Nicanor's Data Science Portfolio Project
 output:
-  pdf_document: default
   html_document:
     df_print: paged
+  pdf_document: default
 ---
 ### Introduction
 Finally, in this part of the project I'll document any previous revisions I've made to my project alongside the possible applications this data can be used for.
@@ -16,9 +16,9 @@ suppressMessages(library("knitr"))
 suppressMessages(library("caret"))
 suppressMessages(library("rvest"))
 suppressMessages(library("stringr"))
-#purl("Discovery_And_DataPrep.Rmd", output = "part1.r")
+purl("Discovery_And_DataPrep.Rmd", output = "part1.r")
 source("part1.r")
-#purl("Model_Planning_and_Building.Rmd", output = "part2.r")
+purl("Model_Planning_and_Building.Rmd", output = "part2.r")
 source("part2.r")
 ```
 
